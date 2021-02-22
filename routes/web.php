@@ -32,3 +32,7 @@ Route::get('/post/{id}', function ($id) {
 Route::get('u/{name?}', function ($name=null) {
     return $name;
 })->where('name','[a-zA-Z]+');
+
+Route::get('/s','StudentController@index');
+
+Route::get('/students/{id}', "StudentController@show");
