@@ -36,7 +36,7 @@ Route::get('u/{name?}', function ($name=null) {
 Route::get('/s','StudentController@index');
 
 Route::get('/students/{id}', "StudentController@show");
-
+//this route return string "lab4"
 Route::get('/lab', function() {
 	return 'lab4';
 });
